@@ -1,0 +1,55 @@
+@import url('common.css');
+@import url('nav.css');
+
+
+.chanel_area {
+  margin-top: 95px; 
+}
+.chanel_area .chanel {
+  display: flex; align-items: center; padding: 10px 0; 
+}
+.chanel_area .chanel img {
+  border-radius: 20px; width: 55px; margin-right: 15px;
+}
+.chanel_area .chanel_column {
+    flex: 1 1 0; display: flex; flex-direction: column; justify-content: space-between;
+}
+.chanel_area .name {
+  font-weight: 500; font-size: 18px;
+}
+.chanel_area .text {
+  font-size: 14px; color: #999; display: flex; align-items: center;
+}
+.chanel_area .text i {
+  color: red; font-size: 12px; margin-left: 5px;
+}
+.chanel_area .fa-message {
+  font-size: 28px;
+}
+
+.list_area {
+padding-bottom: 15px; padding: 25px 0; color: #333;
+}
+.list_area ul {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.list_area ul li {
+  display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+  width: 25%;
+}
+.list_area i {
+  font-size: 26px;
+}
+.list_area p {
+  margin-top: 12px; font-size: 14px;
+}
+
+.suggestions_area {
+  padding: 15px 0; border-top: 1px solid #eee;
+}
+.suggestions_area .title {
+  font-size: 15px; font-weight: 400;
+}
+.suggestions_area .list_area {
+  color: #999;
+}

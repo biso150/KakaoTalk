@@ -1,0 +1,98 @@
+@import url('common.css');
+@import url('nav.css');
+
+.list_area {
+  padding-bottom: 15px; margin-top: 95px; padding-top: 10px;
+}
+.list_area ul {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.list_area ul li {
+  display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+  width: 25%;
+}
+.list_area i {
+  font-size: 26px;
+}
+.list_area p {
+  margin-top: 12px; font-size: 14px;
+}
+
+.recommended_area {
+  color: #999; padding: 10px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;
+}
+.recommended_area .title {
+ font-weight: 400; font-size: 13px;
+}
+.recommended_area .recommended_box {
+  color: #999; height: 200px; display: flex; justify-content: center; align-items: center;
+}
+.recommended_area .recommended_box p {
+  font-size: 14px;
+}
+
+.openchat_area {
+  padding: 10px 0; color: #999; 
+}
+.openchat_area .title_box {
+  display: flex; justify-content: space-between;align-items: center; 
+  font-size: 13px;
+}
+.openchat_area .title {
+  font-weight: 400; font-size: 13px;
+}
+.openchat_area i {
+  font-size: 11px;
+}
+
+.openchat_area .chanel {
+    display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee; 
+    position: relative;
+}
+.openchat_area .chanel:last-child {
+  border: none;
+}
+.openchat_area .chanel > img {
+    border-radius: 5px; width: 80px; margin-left: 12px; order: 1; 
+}
+.openchat_area .chanel_column {
+    flex: 1 1 0; display: flex; flex-direction: column; justify-content: space-between;
+}
+.openchat_area .chanel_column .hashtag_title {
+  font-size: 16px; color: #000;
+}
+.openchat_area .chanel_column .hashtag {
+  font-size: 12px; margin: 2px 0;
+}
+.openchat_area .members {
+  display: flex; align-items: center; font-size: 13px;
+}
+.openchat_area .members img {
+  border-radius: 50%; width: 20px; margin-right: 2px; 
+}
+.openchat_area .members .member {
+  margin: 0 10px 0 5px; position: relative;
+}
+.openchat_area .members .member:after {
+  position: absolute; content: ""; top: 50%; right: -6px; transform: translate(0, -50%); width: 1px; height: 12px;
+  background: #ccc;
+}
+.openchat_area .members .point {
+  color: hotpink;
+}
+.openchat_area .heart {
+  background: rgba(0,0,0,.3); border-radius: 20px; color: #fff; padding: 1px 8px; font-size: 11px; 
+  font-weight: 100; display: flex; align-items: center; justify-content: center; position: absolute;
+  bottom: 14px; right: 4px;
+}
+.openchat_area .heart i {
+  font-size: 10px; animation: color-change 3s linear infinite; position: relative; top: 0;
+  transition: color 3s; }
+@keyframes color-change {
+  50% {
+    color: red;
+  }
+}
+.openchat_area .heart span {
+  margin: 1px 0 0 4px;
+}

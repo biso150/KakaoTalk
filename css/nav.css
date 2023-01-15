@@ -1,0 +1,86 @@
+
+.title_area {
+  display: flex; justify-content: space-between; padding: 20px 25px 10px; position: fixed;
+  top: 25px; left: 0; z-index: 2; background: #fff; width: 100%;
+}
+.title_area .title {
+  font-size: 26px; font-weight: 500;
+}
+.title_area i {
+  margin-left: 15px;
+}
+
+.title_area2 {
+  display: flex; justify-content: space-between; padding: 15px 25px 10px; position: fixed;
+  top: 25px; left: 0; z-index: 2; background: #fff; width: 100%; align-items: center;
+}
+.title_area2 .back, .title_area2 .btn_box {
+  width: 20%;
+}
+.title_area2 .back {
+  display: flex; justify-content: flex-start; align-items: center;
+}
+.title_area2 i {
+  font-size: 20px; 
+}
+.title_area2 .title {
+  font-size: 20px; font-weight: 500; flex: 1 1 0; text-align: center;
+}
+.title_area2 .btn_box {
+  display: flex; justify-content: flex-end; align-items: center;
+}
+.title_area2 .fa-magnifying-glass {
+  margin-right: 15px;
+}
+
+.nav_area {
+  display: flex; justify-content: space-around; align-items: center; background: #f6f6f6;
+  padding: 10px 0; border-top: 1px solid #eee; position: fixed; width: 100%; bottom: 0;
+  z-index: 10; font-size: 15px;
+}
+.nav_area a {
+  width: 25%; position: relative; bottom: -50px; animation: appear .5s forwards;
+  transition: bottom .5s; display: flex; justify-content: center; align-items: center;
+}
+.nav_area a:nth-of-type(2) {
+  animation-delay: .2s;
+}
+.nav_area a:nth-of-type(3) {
+  animation-delay: .4s;
+}
+.nav_area a:nth-of-type(4) {
+  animation-delay: .6s;
+}
+@keyframes appear {
+  to {
+    bottom: 0;
+  }
+}
+.nav_area .on span {
+  background: rgb(250,225,0); border-radius: 50%; width: 36px; height: 36px; display: block;
+  text-align: center; 
+}
+.nav_area i {
+  font-size: 20px; line-height: 36px;
+}
+.nav_area a:nth-of-type(2):after {
+  animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0);    
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.nav_area a:nth-of-type(2):after, .nav_area a:nth-of-type(4):after {
+  background: red; position: absolute; border-radius: 50%; left: 50%; 
+}
+.nav_area a:nth-of-type(2):after {
+  width: 18px; content: "4"; top: -2px; transform: translate(2px,0); color: #fff; 
+  line-height: 18px; text-align: center; font-size: 8px;
+}
+.nav_area a:nth-of-type(4):after {
+  width: 4px; height: 4px; content: ""; top: 2px; transform: translate(10px,0); 
+}

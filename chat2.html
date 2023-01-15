@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+  <header class="main_header">
+    <div class="wifi">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi fa-xs"></i>
+    </div>
+    <h3 class="header_title">01:12</h3>
+    <div class="battery">
+      <span>12%</span>
+      <i class="fa-solid fa-battery-quarter fa-lg"></i>
+      <i class="fa-solid fa-bolt fa-sm"></i>
+    </div>
+  </header>
+
+  <main class="chat_wrapper chat_wrapper2">
+    <section class="title_area2">
+      <a href="#" onclick="histroy.go(-1);" class="back"><i class="fa-solid fa-chevron-left"></i></a>
+      <h1 class="title">사윤이</h1>
+      <div class="btn_box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section class="chat_area inner">
+      <h3 class="title">Sunday, January 15, 2023</h3>
+      <ul>
+        <li class="message send">
+          <div class="message_box">
+            <div class="massage_detail">
+              <p class="text">어? 프사 바꿨네 ~ 이쁘다. 프사 사진 보내주라 ㅎㅎ</p>
+              <span class="time">08:03</span>
+            </div>
+          </div>
+        </li>
+        <li class="message receive">
+          <img src="img/7.jpg" alt="">
+          <div class="message_box">
+            <h4 class="name">사윤이</h4>
+            <div class="massage_detail">
+              <img src="img/7.jpg" alt="">
+              <span class="time">08:05</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <form class="massage_form">
+        <i class="fa-regular fa-square-plus"></i>
+        <div class="input_box">
+          <input type="text">
+          <div class="icon_box">
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/171ab53f22.js" crossorigin="anonymous"></script>
+</body>
+</html>

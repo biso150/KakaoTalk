@@ -1,0 +1,34 @@
+@import url('common.css');
+@import url('nav.css');
+
+.list_area {
+    margin-top: 90px;
+}
+.list_area ul:first-child {
+    border-bottom: 1px solid #ccc; padding-bottom: 15px;
+}
+.list_area ul:last-child {
+    padding-top: 15px;
+}
+.list_area ul li {
+    display: flex; align-items: center; border-bottom: 1px solid #f5f5f5; padding: 20px 0;
+    font-size: 20px;
+}
+.list_area ul li:last-child {
+    border: none;
+}
+.list_area .list_column {
+    display: flex; justify-content: space-between; margin-left: 20px; flex: 1 1 0;
+    align-items: center;
+}
+.list_area .list_column .title {
+    font-weight: 400; font-size: 20px; position: relative;
+}
+.list_area .list_column .text {
+    color: #999; font-weight: 400; font-size: 18px;
+}
+.list_area .list_column .title.new:after {
+    content:"N"; color: #fff; background: red; width: 18px; height: 18px; font-size: 12px;
+    border-radius: 50%; font-weight: 500; position: absolute; top: 50%; right: 0; 
+    transform: translate(130%,-50%); text-align: center;
+}

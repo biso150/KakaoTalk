@@ -1,0 +1,45 @@
+@import url('common.css');
+
+
+.title_area {
+    margin-bottom: 55px; text-align: center;
+}
+.title_area .title {
+    font-size: 22px; margin-bottom: 18px; font-weight: 400;
+}
+.title_area p {
+    font-size: 16px; color: #666;
+}
+
+.login_area input {
+    width: 100%; border: none; border-bottom: 1px solid #999;
+    padding: 15px 5px; font-size: 16px; font-weight: 300;
+}    
+.login_area input::placeholder {
+    color: #666;
+}
+.login_area .login {
+    margin-top: 35px;
+}
+.login_area .btn {
+    background: #f6f6f6; margin-bottom: 10px; font-size: 15px; padding: 10px 0;
+    width: 100%; text-align: center;
+}
+.login_area .find {
+    font-size: 13px; text-align: center; display: block; margin-top: 5px;
+}
+
+.loading {
+    position: absolute; width: 100vw; height: 100vh; top: 0; left: 0; background: rgb(250,225,0);
+    display: flex; justify-content: center; align-items: center; animation: fadeOut 1s .5s forwards;
+    transition: opacity 1s;
+}
+@keyframes fadeOut {
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.loading .fa-comment {
+    color: rgb(60,30,30); font-size: 100px;
+}

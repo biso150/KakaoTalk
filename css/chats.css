@@ -1,0 +1,31 @@
+@import url('common.css');
+@import url('nav.css');
+
+.chanel_area {
+    margin-top: 95px;
+}
+.chanel_area .chanel {
+    display: flex; align-items: center; padding: 10px 0;
+}
+.chanel_area .chanel_list img {
+    border-radius: 18px; width: 48px; margin-right: 12px;
+}
+.chanel_area .chanel_column {
+    flex: 1 1 0; 
+}
+.chanel_area .chanel_list .name {
+    font-weight: 500; font-size: 15px;
+}
+.chanel_area .chanel_list .text {
+    color: #999; font-size: 12px;
+}
+.chanel_area .chat_info {
+    display: flex; flex-direction:column; align-items: flex-end; justify-content: space-between;
+}
+.chanel_area .time {
+    font-size: 12px; color: #999;
+}
+.chanel_area .length {
+    width: 18px; line-height: 18px; background: red; border-radius: 50%; font-weight: 500; 
+    font-size: 10px; color: #fff; text-align: center; margin-top: 3px;
+}

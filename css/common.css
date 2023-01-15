@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; line-height: 1.5;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+button {
+    border: none; background: transparent; cursor: pointer;
+}
+a {
+    text-decoration: none; color: inherit; 
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.inner {
+    padding: 0 25px 50px; 
+}
+
+.main_header {
+    position: fixed; top: 0; left: 0; width: 100%; padding: 5px 10px; display: flex;
+    justify-content: space-between; align-items: center; z-index: 3; background: #fff;
+}
+.main_header .wifi, .main_header .header_title, .main_header .battery {
+    width: 33%; 
+}
+.main_header .battery {
+    display: flex; justify-content: flex-end; align-items: center;
+}
+.main_header span, .main_header .header_title {
+    font-size: 15px;
+}
+.main_header .fa-solid { 
+    margin-left: 5px;
+}
+.main_header .header_title { 
+    text-align: center; 
+}
+
+.fa-gear:hover {
+    animation: rotate .5s linear infinite;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(180deg);
+    }
+}
