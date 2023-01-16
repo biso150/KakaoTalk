@@ -22,7 +22,7 @@ body {
     display: flex; margin-bottom: 15px; position: relative;
 }
 .chat_area .receive {
-    align-items: flex-start; left: -100%; position: relative; transition: left 1s;
+    align-items: flex-start; left: -150%; position: relative; transition: left 1s;
     animation: right-slide 1s linear forwards;
 }
 .chat_area .message .name {
@@ -39,7 +39,7 @@ body {
     font-size: 11px; color: #666; margin: 0 6px;
 }
 .chat_area .send {
-    justify-content: flex-end; right: -100%; transition: right 1s; 
+    justify-content: flex-end; right: -150%; transition: right 1s; 
     animation: left-slide 1s linear forwards;
 }
 .chat_area .send .text {

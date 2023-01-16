@@ -1,12 +1,12 @@
 
 .title_area {
   display: flex; justify-content: space-between; padding: 20px 25px 10px; position: fixed;
-  top: 25px; left: 0; z-index: 2; background: #fff; width: 100%;
+  top: 25px; left: 0; z-index: 2; background: #fff; width: 100%; align-items: center;
 }
 .title_area .title {
   font-size: 26px; font-weight: 500;
 }
-.title_area i {
+.title_area i, .title_area2 .btn_box i {
   margin-left: 15px;
 }
 
@@ -28,9 +28,6 @@
 }
 .title_area2 .btn_box {
   display: flex; justify-content: flex-end; align-items: center;
-}
-.title_area2 .fa-magnifying-glass {
-  margin-right: 15px;
 }
 
 .nav_area {
